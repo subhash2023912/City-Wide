@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Wide & IT Solution - About Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Main Card Container */
+        .business-card {
+            background-color: #ffffff;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-top: 5px solid #007bff;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #0061f2 0%, #00c6f7 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .header .tagline {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 40px;
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        /* Highlight keywords */
+        .highlight {
+            color: #0061f2;
+            font-weight: 700;
+        }
+
+        /* Owner Badge */
+        .owner-badge {
+            display: inline-block;
+            background-color: #eef2ff;
+            color: #0061f2;
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            border: 1px solid #dbeafe;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .service-item {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            border-color: #00c6f7;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Footer Section (UPDATED) */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.95em;
+            border-top: 4px solid #0061f2;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            color: #ccc;
+        }
+
+        .footer .address-title {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer .contact-link {
+            color: #00c6f7;
+            text-decoration: none;
+        }
+        
+        .footer .divider {
+            margin: 20px auto;
+            width: 50px;
+            height: 2px;
+            background-color: #555;
+        }
+        
+        .footer .copyright {
+            font-size: 0.8em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="business-card">
+        <div class="header">
+            <h1>City Wide & IT Solution</h1>
+            <div class="tagline">Your Trusted Tech Partner Since 2021</div>
+        </div>
+
+        <div class="content">
+            <div class="owner-badge">👑 Owned by Kiten</div>
+            
+            <p>
+                Established on <strong>February 21, 2021</strong>, City Wide & IT Solution has quickly become a go-to destination for quality technology and support. We are dedicated to providing top-tier service for all your digital needs.
+            </p>
+            <p>
+                Whether you are looking for high-performance <span class="highlight">laptops and computers</span> for work or gaming, advanced <span class="highlight">cameras</span> to capture life's moments, or reliable <span class="highlight">printers</span> for your business, we have the right solution for you.
+            </p>
+            <p>
+                At City Wide & IT Solution, we don't just sell products; we provide the expertise to keep you connected.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <span class="icon">💻</span>
+                    <strong>Laptops & PC</strong>
+                </div>
+                <div class="service-item">
+                    <span class="icon">📸</span>
+                    <strong>Cameras</strong>
+                </div>
+                <div class="service-item">
+                    <span class="icon">🖨️</span>
+                    <strong>Printers</strong>
+                </div>
+                <div class="service-item">
+                    <span class="icon">🛠️</span>
+                    <strong>IT Support</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span class="address-title">Visit Us</span>
+             <p>📍 Hospital Road, Bettiah</p>
+            <p>Pashchim Champaran, BIHAR, 845438</p>
+            
+            <div class="divider"></div>
+            
+            <span class="address-title">Contact</span>
+            <p>📞 +91 9346872608, 9412826106</p>
+            <p>✉️ <a href="mailto:citywideitsolutions@gmail.com" class="contact-link">citywideitsolutions@gmail.com</a></p>
+
+            <div class="divider"></div>
+
+            <p class="copyright">
+                &copy; 2021-2026 City Wide & IT Solution | Est. Feb 21, 2021
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

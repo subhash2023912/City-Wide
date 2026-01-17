@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .shop-categories {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        /* Responsive Grid: Cards will adjust size automatically */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    /* Card Design */
+    .category-group {
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-group:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Image Styling */
+    .category-image {
+        width: 100%;
+        height: 200px; /* Keeps all images the same height */
+        object-fit: cover; /* vital: crops the image to fit perfectly */
+        display: block;
+    }
+
+    .category-content {
+        padding: 20px;
+    }
+
+    .category-title {
+        color: #2c3e50;
+        font-size: 1.3rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+        border-bottom: 3px solid #007bff;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    .tag-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .shop-tag {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        color: #495057;
+        padding: 6px 12px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+    }
+
+    .shop-tag:hover {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+    }
+</style>
+</head>
+<body>
+
+<div class="shop-categories">
+
+    <div class="category-group">
+        <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80" alt="Laptop Repair" class="category-image">
+        <div class="category-content">
+            <h3 class="category-title">Laptop Services</h3>
+            <div class="tag-container">
+                <a href="#" class="shop-tag">Laptop Repair</a>
+                <a href="#" class="shop-tag">Screen Replacement</a> 
+                <a href="#" class="shop-tag">Battery Upgrade</a>
+                <a href="#" class="shop-tag">Hinge Repair</a>
+                <a href="#" class="shop-tag">SSD Installation</a>
+                <a href="#" class="shop-tag">Data Recovery</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-group">
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=600&q=80" alt="Desktop Computer" class="category-image">
+        <div class="category-content">
+            <h3 class="category-title">Desktop & PC</h3>
+            <div class="tag-container">
+                <a href="#" class="shop-tag">Custom Gaming PC</a>
+                <a href="#" class="shop-tag">Office Computer</a>
+                <a href="#" class="shop-tag">Motherboard Repair</a>
+                <a href="#" class="shop-tag">Graphic Cards</a>
+                <a href="#" class="shop-tag">PC Cabinets</a>
+                <a href="#" class="shop-tag">Keyboard & Mouse</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-group">
+        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=600&q=80" alt="CCTV Camera" class="category-image">
+        <div class="category-content">
+            <h3 class="category-title">CCTV & Security</h3>
+            <div class="tag-container">
+                <a href="#" class="shop-tag">Home Security</a>
+                <a href="#" class="shop-tag">IP Camera</a>
+                <a href="#" class="shop-tag">Night Vision</a>
+                <a href="#" class="shop-tag">DVR & NVR</a>
+                <a href="#" class="shop-tag">CCTV Installation</a>
+                <a href="#" class="shop-tag">WiFi Camera</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-group">
+        <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80" alt="Printer" class="category-image">
+        <div class="category-content">
+            <h3 class="category-title">Printers & Supplies</h3>
+            <div class="tag-container">
+                <a href="#" class="shop-tag">Laser Printer</a>
+                <a href="#" class="shop-tag">Cartridge Refill</a>
+                <a href="#" class="shop-tag">Ink Tank</a>
+                <a href="#" class="shop-tag">Printer Repair</a>
+                <a href="#" class="shop-tag">Toner</a>
+                <a href="#" class="shop-tag">Scanner</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
